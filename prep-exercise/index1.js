@@ -8,9 +8,9 @@ const trafficLight = {
 let rotations = 0;
 while (rotations < 2) {
   const currentState = trafficLight.state;
-  if (!currentState) {
+  if (currentState) {
     console.log("the traffic light is on", currentState);
-  } else {
+  } else if (currentState) {
     console.log("The traffic light is on yellow");
   }
   break;
