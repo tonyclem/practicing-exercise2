@@ -8,23 +8,25 @@
  */
 
 // There are 3 different types of drinks:
-
 const drinkTypes = ["cola", "lemonade", "water"];
+
+let cola = 0;
+let lemonade = 0;
+let water = 0;
+
 let drinkTray = [];
 for (let i = 0; i < 5; i++) {
   let drinkBar = drinkTypes[Math.floor(Math.random() * drinkTypes.length)];
-  drinkTray.push(drinkBar);
-  let instaRandom = Math.floor(Math.random() - (2 - 1 + 1) + 1);
-  instaRandom = drinkTray;
-  if (instaRandom[i]) {
-    console.log(`"Hey guys, I brought a ${drinkTray[i]}`);
+
+  if (drinkBar === "cola" && cola < 2) {
+    cola++;
+    drinkTray.push(drinkBar);
+  } else if (drinkBar === "water" && water < 2) {
+    water++;
+    drinkTray.push(drinkBar);
+  } else if (drinkBar === "lemonade" && lemonade < 2) {
+    lemonade++;
+    drinkTray.push(drinkBar);
   }
+  console.log(`"Hey guys, I brought a ${drinkTray[i]}`);
 }
-// console.log(drinkTray);
-// console.log(`"Hey guys, I brought a ${drinkTray}`);
-
-// console.log(Math.floor(Math.random() * (2 - 1 + 1) + 1));
-
-// else if (drinkTray[i]) {
-//     console.log(`"Hey guys, I brought a ${drinkTray[i]}`);
-//   }
