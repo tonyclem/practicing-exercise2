@@ -9,13 +9,12 @@
 
 // There are 3 different types of drinks:
 const drinkTypes = ["cola", "lemonade", "water"];
-
 let cola = 0;
 let lemonade = 0;
 let water = 0;
 
 let drinkTray = [];
-for (let i = 0; i < 5; i++) {
+while (drinkTray.length < 5) {
   let drinkBar = drinkTypes[Math.floor(Math.random() * drinkTypes.length)];
 
   if (drinkBar === "cola" && cola < 2) {
@@ -28,5 +27,5 @@ for (let i = 0; i < 5; i++) {
     lemonade++;
     drinkTray.push(drinkBar);
   }
-  console.log(`"Hey guys, I brought a ${drinkTray[i]}`);
 }
+console.log(`"Hey guys, I brought a ${drinkTray}`);
