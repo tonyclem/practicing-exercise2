@@ -8,15 +8,18 @@
  */
 
 for (let i = 0; i <= 20; i++) {
-  if (i % 2 == 0) {
-    continue;
+  if (i % 2 == 1) {
+    console.log(`The number ${i} is odd!`);
+  } else if (i % 2 == 0) {
+    console.log(`The number ${i} is even!`);
   }
-  console.log(`The number ${i} is odd!`);
 }
 
-for (let i = 0; i <= 20; i++) {
-  if (i % 2 == 1) {
-    continue;
-  }
-  console.log(`The number ${i} is even!`);
-}
+// OutPrint
+
+// The number 0 is even!
+// The number 1 is odd!
+// The number 2 is even!
+// The number 3 is odd!
+// The number 4 is even!
+// The number 5 is odd! .......

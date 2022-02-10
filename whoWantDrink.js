@@ -28,4 +28,6 @@ while (drinkTray.length < 5) {
     drinkTray.push(drinkBar);
   }
 }
-console.log(`"Hey guys, I brought a ${drinkTray}`);
+console.log(`"Hey guys, I brought a ${drinkTray}"`);
+
+// OutPrint Buy: "Hey guys, I brought a water,lemonade,cola,lemonade,cola"
