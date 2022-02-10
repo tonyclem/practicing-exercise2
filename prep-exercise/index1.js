@@ -5,10 +5,9 @@ const trafficLight = {
   state: "green",
 };
 
-let rotations = 2;
+let rotations = 0;
 while (rotations < 3) {
   const currentState = trafficLight.state;
-
   switch (rotations) {
     case 0:
       console.log("the traffic light is on", currentState);

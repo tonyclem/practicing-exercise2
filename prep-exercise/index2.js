@@ -6,22 +6,24 @@
 
 const trafficLight = {
   possibleStates: ["green", "orange", "red"],
-  stateIndex: 2,
+  stateIndex: 0,
 };
 
 let cycle = 0;
 
-while (cycle < 2) {
+while (cycle < 6) {
   const currentState = trafficLight.possibleStates[trafficLight.stateIndex];
-  switch (cycle) {
-    case 0:
-      console.log("the traffic light is on", currentState);
+  console.log("the traffic light is on", currentState);
+  switch (currentState) {
+    case "green":
+      trafficLight.stateIndex = 1;
       break;
-    case 2:
-      console.log("the traffic light is on", currentState);
+    case "orange":
+      trafficLight.stateIndex = 2;
       break;
     default:
-      console.log("the traffic light is on red");
+      trafficLight.stateIndex = 0;
+      cycle++;
+      break;
   }
-  return currentState;
 }
