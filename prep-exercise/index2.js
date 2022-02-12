@@ -11,7 +11,7 @@ const trafficLight = {
 
 let cycle = 0;
 
-while (cycle < 6) {
+while (cycle < 2) {
   const currentState = trafficLight.possibleStates[trafficLight.stateIndex];
   console.log("the traffic light is on", currentState);
   switch (currentState) {
