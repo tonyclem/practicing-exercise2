@@ -6,17 +6,19 @@ const trafficLight = {
 };
 
 let rotations = 0;
-while (rotations < 3) {
+while (rotations < 2) {
   const currentState = trafficLight.state;
-  switch (rotations) {
-    case 0:
-      console.log("the traffic light is on", currentState);
+  console.log("The traffic light is on", currentState);
+  switch (currentState) {
+    case "green":
+      trafficLight.state = "green";
       break;
-    case 1:
-      console.log("the traffic light is on orange");
+    case "orange":
+      trafficLight.state = "orange";
       break;
     default:
-      console.log("the traffic light is on red");
+      trafficLight.state = "red";
+      rotations++;
   }
   return currentState;
 }

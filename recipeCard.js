@@ -8,8 +8,8 @@ let holdObject = {
 };
 
 //Log each property out separately, using a loop (for, while or do/while)
-for (let [keyworld, valuess] of Object.entries(holdObject)) {
-  console.log(`${keyworld}: ${valuess}`);
+for (let [keyword, values] of Object.entries(holdObject)) {
+  console.log(`${keyword}: ${values}`);
 }
 
 //  Declare a variable that holds an empty object literal (your meal recipe).

@@ -15,10 +15,10 @@ let cola = 0;
 let lemonade = 0;
 let water = 0;
 
-// here we hava an empty array called drinkTray that will receive value
+// here we have an empty array called drinkTray that will receive value
 let drinkTray = [];
 
-// using while loop, to loop throught the drinkTray length, to check if the length is less then 5, as long as the test condition evaluates to true. the condition will continues looping until is falsy
+// using while loop, to loop through the drinkTray length, to check if the length is less then 5, as long as the test condition evaluates to true. the condition will continues looping until is falsy
 while (drinkTray.length < 5) {
   // declaring new variable called drinkFromBar and passing drinkTypes to, as a new value, and using Math random to random the drinkTypes
   let drinkFromBar = drinkTypes[Math.floor(Math.random() * drinkTypes.length)];
@@ -36,6 +36,6 @@ while (drinkTray.length < 5) {
   }
 }
 // this print out our values
-console.log(`Hey guys, I brought some drink a ${drinkTray}`);
+console.log(`Hey guys, I brought some drink a ${drinkTray.join(", ")}`);
 
 // OutPrint Buy: "Hey guys, I brought a water,lemonade,cola,lemonade,cola"
